@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artfirma</title>
+<!----------CSS------------------->
+    <link rel="stylesheet" href="style.css">
+
+    <!----------Font Awsome CDN------------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="parent">
+        <div class="desc">
+            <h1 class="text">Artfirma</h1>
+            <p>Looking for Interior designers in Dubai.Here is the perfect place foe you</p>
+            <button id="init">START CHAT</button>
+        </div>
+        <div>
+            <img src="download.jpeg" alt="" class="bot-img">
+        </div>
+    </div>
+    <div id="test" style="position: fixed;top: 4rem;right: 8rem;display: none;">
+        <div class="child" id="chatbot">
+            <div class="header">
+                <div class="h-child">
+                    <img src="artfirma.png" alt="avatar" id="avatar">
+                    <div>
+                        <span class="name">Chatbot</span>
+                        <br>
+                        <span style="color:lawngreen">online</span>
+                    </div>
+                </div>
+                <div>
+                    <button class="refBtn"><i class="fa fa-refresh" onclick="initChat()"></i></button>
+                </div>
+            </div>
+
+            <div id="chat-box">   
+            </div>
+            <div id="card-element"></div>
+            <div class="footer">
+                <span></span>
+            </div>
+            
+        </div>
+    </div>
+   
+    <script src="https://js.stripe.com/v3/"></script>   
+    <script src="index.js"></script>
+</body>
+</html>
